@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { filter } from "../../redux/filter/filter-actions";
 import css from "./Filter.module.css";
+import { filter } from "../../redux/filter/filter-actions";
 
-function Filter() {
+export default function Filter() {
   const value = useSelector((state) => state.filter);
   const dispatch = useDispatch();
 
@@ -22,4 +22,3 @@ function Filter() {
     </div>
   );
 }
-export default Filter;
