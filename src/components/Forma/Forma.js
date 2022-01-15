@@ -3,7 +3,7 @@ import { addContact } from "../../redux/contacts/contacts-actions";
 import { useDispatch } from "react-redux";
 import css from "./Forma.module.css";
 
-function Form({ onSubmit }) {
+function Form() {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
