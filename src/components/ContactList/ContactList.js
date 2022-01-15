@@ -31,8 +31,8 @@ export default function ContactList() {
   return (
     <ul className={css.list}>
       {visibleContacts &&
-        visibleContacts.map(({ name, number, id }) => (
-          <li className={css.listItem} key={id}>
+        visibleContacts.map(({ id, name, number }) => (
+          <li className={css.item} key={id}>
             {`${name}: ${number}`}
             <button
               className={css.btn}
