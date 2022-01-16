@@ -13,6 +13,7 @@ export const addContact = createAsyncThunk(
   "contacts/addContact",
   async ({ name, number }) => {
     const contacts = await jsonServerApi.addContact({ name, number });
+    console.log(contacts);
     return contacts;
   }
 );
