@@ -4,12 +4,11 @@ axios.defaults.baseURL = "https://61e31726fbee6800175eaf9c.mockapi.io";
 
 export const fetchContacts = async () => {
   return axios.get("/contacts").then((response) => {
-    console.log(fetchContacts);
     return response.data;
   });
 };
 export const addContact = async (contact) => {
-  console.log(contact);
+  console.dir(contact);
   return axios.post("/contacts", contact).then(({ data }) => data);
 };
 
